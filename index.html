@@ -1,0 +1,700 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"/>
+
+  <style>
+
+    .no-scrollbar::-webkit-scrollbar {
+
+        display: none;
+    }
+    .no-scrollbar {
+
+        -ms-overflow-style: none;
+
+        scrollbar-width: none;
+    }
+
+  </style>
+  </head>
+  
+  <body>
+    <!-- header section -->
+  <header class="py-4 px-8 lg:px-24  bg-white flex items-center justify-between shadow-sm"> 
+    <div class="flex items-center">
+        <img src="headerImg/Logo (1).svg" alt="skyvela logo" class="h-8 w-auto">
+    </div>
+    <nav class="hidden md:flex  space-x-2.5 lg:space-x-8 text-lg  text-[#1E2358] ">
+        <a href="#" class="">Flights</a>
+        <a href="#" class="">Hotels</a>
+        <a href="#" class="">Pakages</a>
+        <a href="#" class="">Activities</a>
+        <a href="#" class="">Transfers</a>
+
+    </nav>
+    <div class="flex items-center space-x-2" >
+        <!-- parent -->
+         <!-- flag  p-->
+          <div class="hidden sm:flex  items-center space-x-1">
+            <img src="headerImg/flag.png" alt="usa flag" class="w-5 h-5 object-cover">
+             <span class="text-xs font-medium text-gray-500 ">ENG</span>
+              <img src="headerImg/Arrow-down.png"  alt="arrow" class=" h-4 ">
+          </div>
+          <!-- button -->
+           <div>
+            <button class="px-2.5 py-1  sm:px-3 sm:py-1.5 text-sm font-semibold text-white
+            bg-[#1E2358]   rounded-md" >Sign In
+            <!-- bg-[#2B2B68] -->
+                <i class="ri-arrow-right-line font-medium"></i>
+            </button>
+           </div>
+           <!-- icon -->
+            <div class="cursor-pointer bg-yellow-400 py-2.5 px-1.5 sm:py-3 sm:px-2 rounded-md"><img src="headerImg/burger icon.svg" class="w-3 h-2" alt=""></div>
+    </div>
+  </header>
+  <!-- hero -section -->
+   <section class="relative w-full h-[800px] md:h-[500px] overflow-hidden" >
+    <img src="hero/herooimg.jpg" class="absolute inset-0 w-full h-full object-cover object-top md:object-center "  alt="skyvela hero image">
+     <div class="absolute inset-0 bg-black/30"></div>
+    <!-- hero-card section -->
+       <div class="relative z-10 flex items-center justify-center h-full">
+        <div class="w-[92%]  h-[500px] mb-20 md:h-[280px]  md:w-[85%]  py-5   md:py-9 bg-white rounded-[22px] shadow-2xl" >
+            <!-- card first head -->
+            <div class="flex px-0   md:ps-[14px]  border-b-1 border-gray-300">
+              <!-- icons -->
+               
+                <button  class="mx-2 flex flex-col md:flex-row  items-center  md:px-2 pb-4 border-[#1E2358] text-[#1E2358]  font-semibold md:font-bold border-b-2">
+                     <img src="hero/airp.svg" alt="card img" class="w-6">
+                    FLights</button>
+
+                     <button  class="flex flex-col  md:flex-row items-center mx-[2px] md:mx-7  px-1 pb-4 text-gray-600 font-normal md:font-medium ">
+                     <img src="hero/house.svg" alt="card img" class="w-6 ">
+                     Hotels</button>
+                      <button  class="flex flex-col md:flex-row items-centermx-[2px]  md:mx-7 px-1 pb-4 text-gray-600 font-normal md:font-medium ">
+                     <img src="hero/jug.svg" alt="card img" class="w-6">
+                    Pakages</button>
+                     <button  class="flex flex-col md:flex-row items-center mx-[2px] md:mx-7 px-1  pb-4 text-gray-600 font-normal  md:font-medium ">
+                     <img src="hero/buueger.svg" alt="card img" class="w-6">
+                    Activities</button>
+                     <button  class="flex flex-col md:flex-row items-center px-1 mx-[2px] md:mx-7   pb-4 text-gray-600 font-normal md:font-medium ">
+                     <img src="hero/car.svg" alt="card img" class="w-6">
+                    Transfer</button>
+            </div>
+  
+        <!-- card sec part -->
+       <div class="flex flex-wrap   items-center gap-3 md:group-4: md:ps-[16px] mx-1 px-1 py-3 ">
+    
+    <label class="flex items-center space-x-1 cursor-pointer bg-[#1E2358] px-3 py-1.5 rounded-[8px] overflow-hidden">
+        <input type="radio" name="trip-type" class="w-3 h-3 accent-white" checked>
+        <span class="text-[11px] font-bold text-white">One Way</span>
+    </label>
+
+    <label class="flex items-center space-x-1 cursor-pointer border border-gray-200 bg-gray-200 px-3 py-1.5 rounded-[8px] hover:bg-gray-50">
+        <input type="radio" name="trip-type" class="w-3 h-3 accent-[#1E2358]">
+        <span class="text-[11px] font-medium text-gray-500">Round Trip</span>
+    </label>
+
+    <label class="flex items-center space-x-1 cursor-pointer border border-gray-200 bg-gray-200 px-3 py-1.5 rounded-[8px] hover:bg-gray-50">
+        <input type="radio" name="trip-type" class="w-3 h-3 accent-[#1E2358]">
+        <span class="text-[11px] font-medium text-gray-500">Multi City</span>
+    </label>
+
+</div>  
+          
+<!-- LOCACTION  -->
+  <div class="my-2">
+    <div class="grid  md:grid-cols-5  px-3  gap-[8px] ">
+
+        <div class="border border-gray-200 p-2 rounded-[9px]">
+           <div class="flex">
+             <img src="hero/loca.svg" alt="arrow img">
+            <p class="text-sm text-[#1E2358] ps-[4px]">FROM</p>
+           </div>
+           <div class="">
+            <img src="hero/ARRow.svg" class="w-7 absolute font-bold ml-41 md:ml-44  rounded-[50%] border-[1px] border-gray-200 overflow-hidden" alt="">
+           </div>
+           <p class="font-bold ps-[24px] text-[#1E2358]" >DHAKA</p>
+           <span class="text-xs ps-[24px] text-[#1E2358]">DAC Hazrat Shahjalal Inter</span>
+        </div>
+
+        <div class="border border-gray-200 p-2 rounded-[9px]" >
+            <div class="flex items-center">
+             <img src="hero/Shape.svg" alt="shape img">
+            <p class="text-sm text-[#1E2358] ps-[4px]">TO</p>
+           </div>
+           <p class="font-bold ps-[20px] text-[#1E2358] text-base md:text-lg" >Cox<sup>,</sup>s Bazar</p>
+           <span class=" text-[10px] md:text-xs ps-[20px] text-[#1E2358]  overflow-hidden">CX9 Cox<sup>,</sup>s Bazar 
+           Airport </span>
+        </div>
+
+        <div class="col-span-2 border border-gray-200 p-2 rounded-[9px]"> 
+                  <!-- 3ed parent -->
+            <div class="flex">
+                      <!-- right -->
+                    <div class="border-r-[1.5px] border-gray-200 border-[solid]">
+                            <div class="flex px-1 pr-[14px]" >
+             <img src="hero/date.svg" alt="date img">
+            <p class="text-sm text-[#1E2358] ps-[4px]">DEPARTMENT DATE</p>
+           </div>
+           <p class="font-bold ps-[24px] text-[#1E2358]" >22 MAR<sup>,</sup>26</p>
+           <span class="text-xs ps-[24px] text-[#1E2358]">Sunday</span>
+                         </div>
+                        <!-- r -footer -->
+                         <!-- left -->
+                 <div class="">
+                  <div class="flex  px-1" >
+            <p class="text-sm text-[#1E2358] ps-[2px] flex items-center">RETURN DATE</p>
+           </div>
+          
+           <span class="text-xs ps-[8px] md:ps-[14px] text-[#1E2358] flex  leading-4 pt-1">Save more on return flight</span>
+                         </div>
+                        </div>
+
+                    <!--3rd footer  -->
+                 </div>       
+        <div class="col-span-2 md:col-span-1  border border-gray-200 p-2 rounded-[9px] ">
+              <div class="flex  ">
+             <img src="hero/pepple.svg" alt="people icon img">
+            <p class="text-sm text-[#1E2358] ps-[1px]">TRAVLER,CLASS</p>
+           </div>
+           <p class="font-bold ps-[24px] text-[#1E2358]" >1 Traveler</p>
+           <span class="text-xs ps-[24px] text-[#1E2358]">Economy</span>
+        </div>           
+        </div>
+        </div>
+             
+     <!-- sinup div -->
+     <div class="absolute top-[74%] md:top-[66%] left-[38%] md:left-[45%] py-[5px] md:py-[6px] md:px-[22px] px-[18px] text-[16px] rounded-[5px] font-semibold bg-[#FDCC02] text-[#1E2358]">Search
+                <i class="ri-arrow-right-line  text-[14px]"></i> 
+     </div>
+    </div>
+</div>
+     <!-- parent -->
+        </div>     
+    </div>
+   </section>
+
+<!-- section fetured flight -->
+   <section class="py-2 md:py-5 bg-[#EDEEF1]  ">
+       <div class="flex justify-between px-4 md:px-18  pt-8 md:pt-10">
+        <P class="text-[#5B616E] text-sm ">Best Deal</P>
+        <p class="font-medium text-[#1E2358]">View All</p>
+       </div>
+      <!-- heading -->
+       <div class=" pl-4 md:pl-18 font-bold leading-[20px] md:leading-[24px] text-[21px] md:text-[24px]  text-[#1E2358]" >Featuerd Flights</div>
+
+       <!-- img section -->
+        <div class="flex justify-evenly flex-nowrap  gap-[10px] py-6  px-4 md:px-18 overflow-x-auto no-scrollbar">
+          <div class="flex-shrink-0 border-1 bg-white  border-gray-200 rounded-[8px] w-[345px] h-[201px]">
+            <!-- one -->
+            <div class="flex justify-between py-5 px-4">
+              <img src="aboutImg/Vertical container.svg" class="w-[26px] h-[26px]" alt="airpl icon img">
+              <div class="flex gap-[8px] ">
+                <p class="text-[#6B93EF]  rounded-[6px] text-sm px-[4px] py-[3px] bg-[#F0F4FE]" >Best</p>
+                <p class="bg-[#FFFDE7] rounded-[6px] text-sm px-[4px] py-[3px] text-[#A56B03]">Cheapest</p>
+              </div>
+
+            </div>
+            <!-- second p -->
+             <div class="flex justify-between px-4 pt-[4px]">
+    <p class="font-semibold text-[#1E2358]">DAC</p>
+    
+    <p class="flex items-center justify-center relative">
+        <img src="aboutImg/Group 98155.svg" class="pr-[0px]" alt="light icon">
+        
+        <span class="relative flex items-center justify-center">
+            <img src="aboutImg/Load.svg" class="w-[180px]" alt="rout icon">
+            
+            <img src="aboutImg/Ticket Transport.svg" 
+                 class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" 
+                 alt="airplane icon">
+        </span>
+        
+        <img src="aboutImg/Group 98156.svg" alt="light icon">
+    </p>
+    
+    <p class="font-semibold text-[#1E2358]">DAB</p>
+</div>
+              <div class="flex items-center justify-evenly pb-[10px] px-4">
+                      <p class="text-xs text-gray-500">DHAKA</p>
+                            <p class="font-semibold text-sm text-[#1E2358]">1 Stop</p>
+                                  <p class="text-xs text-gray-500">DUBAI</p>
+              </div>
+             <!-- 3rd p -->
+              <div class="flex py-[20px]  items-center justify-between px-4 border-t border-gray-200">
+                <div class="flex items-center gap-[8px] ">
+                  <img src="aboutImg/Frame 2147235767.svg" class="object-cover " alt="">
+                  <p class="text-[12px] font-semibold text-[#1E2358] w-[10px] leading-[16px]">Qatar Airways</p>
+                </div>
+                <div class="flex gap-[2px]">
+                  <p class="font-medium text-[#1E2358]">$345</p>
+                  <p class="text-[#1E2358]">/</p>
+                  <p class="text-[#1E2358]">Person</p>
+                </div>
+              </div>
+          </div>
+
+          <!-- sec -->
+          <div class="flex-shrink-0 border-1 border-gray-200 bg-white rounded-[5px] w-[345px] h-[201px]">
+<!--  -->
+
+            <!-- one -->
+            <div class="flex justify-between py-5 px-4">
+              <img src="aboutImg/Vertical container.svg" class="w-[26px] h-[26px]" alt="airpl icon img">
+              <div class="flex gap-[8px] ">
+                <p class="text-[#6B93EF]  rounded-[6px] text-sm px-[4px] py-[3px] bg-[#F0F4FE]" >Bundle</p>
+                <p class="bg-[#FFFDE7] rounded-[6px] text-sm px-[4px] py-[3px] text-[#A56B03]">Save Deal</p>
+              </div>
+
+            </div>
+            <!-- second p -->
+           <div class="flex justify-between px-4 pt-[4px]">
+    <p class="font-semibold text-[#1E2358]">DAC</p>
+    
+    <p class="flex items-center justify-center relative">
+        <img src="aboutImg/Group 98155.svg" class="pr-[0px]" alt="light icon">
+        
+        <span class="relative flex items-center justify-center">
+            <img src="aboutImg/Load.svg" class="w-[180px]" alt="rout icon">
+            
+            <img src="aboutImg/Ticket Transport.svg" 
+                 class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" 
+                 alt="airplane icon">
+        </span>
+        
+        <img src="aboutImg/Group 98156.svg" alt="light icon">
+    </p>
+    
+    <p class="font-semibold text-[#1E2358]">DAB</p>
+</div>
+  <div class="flex items-center justify-evenly pb-[10px] px-4">
+                      <p class="text-xs text-gray-500">DHAKA</p>
+                            <p class="font-semibold text-sm text-[#1E2358]">1 Stop</p>
+                                  <p class="text-xs text-gray-500">DUBAI</p>
+              </div>
+             <!-- 3rd p -->
+              <div class="flex py-[20px]  items-center justify-between px-4 border-t border-gray-200">
+                <div class="flex items-center gap-[8px] ">
+                  <img src="aboutImg/Emirates_(airline)-Logo.wine 1.svg" class="object-cover " alt="">
+                  <p class="text-[12px] font-semibold text-[#1E2358] w-[10px] leading-[16px]">Emirates</p>
+                </div>
+                <div class="flex gap-[2px]">
+                  <p class="font-medium text-[#1E2358]">$345</p>
+                  <p class="text-[#1E2358]">/</p>
+                  <p class="text-[#1E2358]">Person</p>
+                </div>
+              </div>
+
+            <!--  -->
+          </div>
+          <!-- 3rd -->
+          <div class="flex-shrink-0 border-1 border-gray-200 bg-white rounded-[5px] w-[345px] h-[201px]">
+            <!--  -->
+               <div class="flex justify-between py-5 px-4">
+              <img src="aboutImg/Vertical container.svg" class="w-[26px] h-[26px]" alt="airpl icon img">
+              <div class="flex gap-[8px] ">
+                <p class="text-[#6B93EF]  rounded-[6px] text-sm px-[4px] py-[3px] bg-[#F0F4FE]" >Best</p>
+                <p class="bg-[#FFFDE7] rounded-[6px] text-sm px-[4px] py-[3px] text-[#A56B03]">Cheapest</p>
+              </div>
+
+            </div>
+            <!-- second p -->
+             <div class="flex justify-between px-4 pt-[4px]">
+    <p class="font-semibold text-[#1E2358]">DAC</p>
+    
+    <p class="flex items-center justify-center relative">
+        <img src="aboutImg/Group 98155.svg" class="pr-[0px]" alt="light icon">
+        
+        <span class="relative flex items-center justify-center">
+            <img src="aboutImg/Load.svg" class="w-[180px]" alt="rout icon">
+            
+            <img src="aboutImg/Ticket Transport.svg" 
+                 class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" 
+                 alt="airplane icon">
+        </span>
+        
+        <img src="aboutImg/Group 98156.svg" alt="light icon">
+    </p>
+    
+    <p class="font-semibold text-[#1E2358]">DAB</p>
+</div>
+  <div class="flex items-center justify-evenly px-4 pb-[10px]">
+                      <p class="text-xs text-gray-500">DHAKA</p>
+                            <p class="font-semibold text-sm text-[#1E2358]">1 Stop</p>
+                                  <p class="text-xs text-gray-500">DUBAI</p>
+              </div>
+     
+             <!-- 3rd p -->
+              <div class="flex py-[20px]  items-center justify-between px-4 border-t border-gray-200">
+                <div class="flex items-center gap-[8px] ">
+                  <img src="aboutImg/Jazeera_Airways-Logo.wine 1.svg" class="object-cover " alt="">
+                  <p class="text-[12px] font-semibold text-[#1E2358] w-[10px] leading-[16px]">Jazeera Airways</p>
+                </div>
+                <div class="flex gap-[2px]">
+                  <p class="font-medium text-[#1E2358]">$345</p>
+                  <p class="text-[#1E2358]">/</p>
+                  <p class="text-[#1E2358]">Person</p>
+                </div>
+              </div>
+
+            <!--  -->
+          </div>
+
+
+        </div>
+   </section>
+
+ <!--  hotels section -->
+<section class="py-2 md:py-6 bg-[#EDEEF1]">
+    <!-- top header -->
+    <div class="flex justify-between px-4 md:px-18 pt-8 md:pt-10">
+        <p class="text-[#5B616E] text-sm font-medium">Top Rated</p>
+        <p class="font-medium text-[#1E2358] cursor-pointer hover:underline">View All</p>
+    </div>
+    
+    <!-- section heading -->
+    <div class="pl-4 md:pl-18 font-bold text-[22px] md:text-[26px] text-[#1E2358] mb-6">
+        Popular Hotels
+    </div>
+
+    <!-- cards scrollable  -->
+    <div class="flex flex-nowrap gap-[15px] px-4 md:px-18 overflow-x-auto no-scrollbar pb-6">
+        
+        <!-- hotel card 1 -->
+        <div class="flex-shrink-0 bg-white border border-gray-200 rounded-[12px] w-[320px] md:w-[345px] overflow-hidden shadow-sm">
+            <div class="relative h-[170px] w-full">
+                <img src="hotelsImg/del2.svg" class="absolute top-3 left-0 z-10 w-30" alt="badge">
+                <img src="hotelsImg/the-anam-XA6vchunFJk-unsplash 1.svg" class="w-full h-full object-cover" alt="Grand Switzerland">
+            </div>
+            <div class="p-4">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="font-bold text-[#1E2358] text-[17px]">Grand Switzerland</h3>
+                        <p class="text-sm text-[#5B616E] flex items-center gap-1 mt-1">
+                            <img src="hotelsImg/Vector.svg" class="w-3" alt="loc"> Switzerland
+                        </p>
+                    </div>
+                    <div class="text-right">
+                        <img src="hotelsImg/Frame 5949.svg" class="ml-auto w-16" alt="stars">
+                        <p class="text-[11px] text-[#1E2358] mt-1">4.8 (3.0k Reviews)</p>
+                    </div>
+                </div>
+                <div class="flex justify-between items-end mt-5">
+                    <div class="space-y-1">
+                        <p class="text-[12px] text-[#1E2358] font-medium flex items-center gap-1">
+                            <img src="hotelsImg/Path 3550.svg" class="w-4" alt="bf"> Breakfast included
+                        </p>
+                        <div class="flex gap-3">
+                            <span class="text-[11px] text-[#5B616E] flex items-center gap-1">
+                                <img src="hotelsImg/Path 8114.svg" class="w-3" alt="wifi"> Free wifi
+                            </span>
+                            <span class="text-[11px] text-[#5B616E] flex items-center gap-1">
+                                <img src="hotelsImg/Path 8113.svg" class="w-3" alt="spa"> Spa
+                            </span>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-xl font-bold text-[#1E2358]">$345</p>
+                        <p class="text-[10px] text-[#5B616E] leading-tight">per night/person</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- hotel card 2 -->
+        <div class="flex-shrink-0 bg-white border border-gray-200 rounded-[12px] w-[320px] md:w-[345px] overflow-hidden shadow-sm">
+            <div class="relative h-[170px] w-full">
+                <img src="hotelsImg/dek1.svg" class="absolute top-3 left-0 z-10 w-30" alt="badge">
+                <img src="hotelsImg/the-anam-XA6vchunFJk-unsplash 1 (1).svg" class="w-full h-full object-cover" alt="Tiny House">
+            </div>
+            <div class="p-4">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="font-bold text-[#1E2358] text-[17px]">Tiny House Dierich...</h3>
+                        <p class="text-sm text-[#5B616E] flex items-center gap-1 mt-1">
+                            <img src="hotelsImg/Vector.svg" class="w-3" alt="loc"> Switzerland
+                        </p>
+                    </div>
+                    <div class="text-right">
+                        <img src="hotelsImg/Frame 5949.svg" class="ml-auto w-16" alt="stars">
+                        <p class="text-[11px] text-[#1E2358] mt-1">4.8 (3.0k Reviews)</p>
+                    </div>
+                </div>
+                <div class="flex justify-between items-end mt-5">
+                    <div class="space-y-1">
+                        <p class="text-[12px] text-[#1E2358] font-medium flex items-center gap-1">
+                            <img src="hotelsImg/Path 3550.svg" class="w-4" alt="bf"> Breakfast included
+                        </p>
+                        <div class="flex gap-3">
+                            <span class="text-[11px] text-[#5B616E] flex items-center gap-1">
+                                <img src="hotelsImg/Path 8114.svg" class="w-3" alt="wifi"> Free wifi
+                            </span>
+                            <span class="text-[11px] text-[#5B616E] flex items-center gap-1">
+                                <img src="hotelsImg/Path 8113.svg" class="w-3" alt="spa"> Spa
+                            </span>
+                        </div>
+                    </div>
+
+
+                    <div class="text-right">
+                        <p class="text-xl font-bold text-[#1E2358]">$345</p>
+                        <p class="text-[10px] text-[#5B616E] leading-tight">per night/person</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- hotel card3 -->
+        <div class="flex-shrink-0 bg-white border border-gray-200 rounded-[12px] w-[320px] md:w-[345px] overflow-hidden shadow-sm">
+            <div class="relative h-[170px] w-full">
+                <img src="hotelsImg/del3.svg" class="absolute top-3 left-0 z-10 w-30" alt="badge">
+                <img src="hotelsImg/the-anam-XA6vchunFJk-unsplash 1 (2).svg" class="w-full h-full object-cover" alt="Luxury Resort">
+            </div>
+            <div class="p-4">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="font-bold text-[#1E2358] text-[17px]">Grand Switzerland</h3>
+                        <p class="text-sm text-[#5B616E] flex items-center gap-1 mt-1">
+                            <img src="hotelsImg/Vector.svg" class="w-3" alt="loc"> Switzerland
+                        </p>
+                    </div>
+                    <div class="text-right">
+                        <img src="hotelsImg/Frame 5949.svg" class="ml-auto w-16" alt="stars">
+                        <p class="text-[11px] text-[#1E2358] mt-1">4.8 (3.0k Reviews)</p>
+                    </div>
+                </div>
+                <div class="flex justify-between items-end mt-5">
+                    <div class="space-y-1">
+                        <p class="text-[12px] text-[#1E2358] font-medium flex items-center gap-1">
+                            <img src="hotelsImg/Path 3550.svg" class="w-4" alt="bf"> Breakfast included
+                        </p>
+                        <div class="flex gap-3">
+                            <span class="text-[11px] text-[#5B616E] flex items-center gap-1">
+                                <img src="hotelsImg/Path 8114.svg" class="w-3" alt="wifi"> Free wifi
+                            </span>
+
+                            <span class="text-[11px] text-[#5B616E] flex items-center gap-1">
+                             
+                              <img src="hotelsImg/Path 8113.svg" class="w-3" alt="spa"> Spa
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="text-right">
+                        <p class="text-xl font-bold text-[#1E2358]">$345</p>
+                        <p class="text-[10px] text-[#5B616E] leading-tight">
+                          per night/person</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+  
+  <!-- activities section -->
+<section class="py-2 md:py-6 bg-[#EDEEF1]">
+    <!-- header -->
+    <div class="flex justify-between px-4 md:px-18 pt-8 md:pt-10">
+        <p class="text-[#5B616E] text-sm">Experiences</p>
+        <p class="font-medium text-[#1E2358] cursor-pointer">View All</p>
+    </div>
+    
+    
+    <div class="pl-4 md:pl-18 pb-6 font-bold leading-[20px] md:leading-[24px] text-[21px] md:text-[24px] text-[#1E2358]">
+        Featured Activities
+    </div>
+
+    <!-- Images Container horiz -->
+    <div class="flex flex-nowrap gap-[10px] px-4 md:px-18 overflow-x-auto no-scrollbar">
+        
+        <!-- card 1 -->
+        <div class="flex-shrink-0 bg-white rounded-[8px] w-[345px] pb-4 shadow-sm">
+            <div class="w-full h-[181px] bg-slate-50 rounded-t-[8px] overflow-hidden">
+                <img src="hotelsImg/img (3).svg" class="w-full h-full object-cover object-top" alt="activity">
+            </div>
+            <div class="px-4 pt-2">
+                <div class="flex items-center gap-1 pt-1.5">
+                    <img src="hotelsImg/Frame 5949.svg" alt="rating">
+                    <p class="text-sm text-[#1E2358]">4.8(3.0k Reviews)</p>
+                </div>
+                <h3 class="font-bold text-[#1E2358] mt-1">Coral Reef Snorkeling Tour</h3>
+                <p class="text-sm text-[#1E2358] flex items-center gap-[4px] leading-5">
+                    <img src="hotelsImg/Vector.svg" alt="loc" class="w-[8px]"> Switzerland
+                </p>
+
+                <div class="flex items-center mt-2">
+                    <p class="text-xs text-[#1E2358]">From</p>
+                    <p class="text-lg font-medium text-[#1E2358] px-1">$345</p>
+                    <p class="text-xs text-[#1E2358]">/ Person</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card2 -->
+        <div class="flex-shrink-0 bg-white rounded-[8px] w-[345px] pb-4 shadow-sm">
+            <div class="w-full h-[181px] bg-slate-50 rounded-t-[8px] overflow-hidden">
+                <img src="hotelsImg/img (1).svg" class="w-full h-full object-cover object-top" alt="activity">
+            </div>
+            <div class="px-4 pt-2">
+                <div class="flex items-center gap-1 pt-1.5">
+                    <img src="hotelsImg/Frame 5949.svg" alt="rating">
+                    <p class="text-sm text-[#1E2358]">4.8(3.0k Reviews)</p>
+                </div>
+                <h3 class="font-bold text-[#1E2358] mt-1">Coral Reef Snorkeling Tour</h3>
+                <p class="text-sm text-[#1E2358] flex items-center gap-[4px] leading-5">
+                    <img src="hotelsImg/Vector.svg" alt="loc" class="w-[8px]"> Switzerland
+                </p>
+                <div class="flex items-center mt-2">
+                    <p class="text-xs text-[#1E2358]">From</p>
+                    <p class="text-lg font-medium text-[#1E2358] px-1">$345</p>
+                    <p class="text-xs text-[#1E2358]">/ Person</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- card3 -->
+        <div class="flex-shrink-0 bg-white rounded-[8px] w-[345px] pb-4 shadow-sm">
+            <div class="w-full h-[181px] bg-slate-50 rounded-t-[8px] overflow-hidden">
+                <img src="hotelsImg/img.svg" class="w-full h-full object-cover object-top" alt="activity">
+            </div>
+            <div class="px-4 pt-2">
+                <div class="flex items-center gap-1 pt-1.5">
+                    <img src="hotelsImg/Frame 5949.svg" alt="rating">
+                    <p class="text-sm text-[#1E2358]">4.8(3.0k Reviews)</p>
+                </div>
+                <h3 class="font-bold text-[#1E2358] mt-1">Grand Switzerland</h3>
+                <p class="text-sm text-[#1E2358] flex items-center gap-[4px] leading-5">
+                    <img src="hotelsImg/Vector.svg" alt="loc" class="w-[8px]"> Switzerland
+                </p>
+                <div class="flex items-center mt-2">
+                    <p class="text-xs text-[#1E2358]">From</p>
+                    <p class="text-lg font-medium text-[#1E2358] px-1">$345</p>
+                    <p class="text-xs text-[#1E2358]">/ Person</p>
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- end of horiz -->
+</section> 
+   
+ 
+  <!-- promotion offer section -->
+<section class="py-2 md:py6 bg-[#EDEEF1]"> 
+    <div class="flex justify-between px-4 md:px-18 pt-8 md:pt-10">
+        <p class="text-[#5B616E] text-sm">Special Offers</p>
+        <p class="font-medium text-[#1E2358] cursor-pointer">View All</p>
+    </div>
+    
+    <div class="pl-4 md:pl-18 pb-6 font-bold text-[21px] md:text-[24px] text-[#1E2358]">
+        Promotional Offers
+    </div>
+
+    <!-- scrollable container -->
+    <div class="flex gap-[10px] px-4 md:px-18 overflow-x-auto no-scrollbar pb-8">
+        <!-- card1 -->
+        <div class="flex-shrink-0 rounded-[8px] w-[345px] h-[201px] overflow-hidden">
+            <img src="hotelsImg/Promotional Offers.svg" class="w-full h-full object-cover" alt="offer 1">
+        </div>
+        <!-- card2 -->
+        <div class="flex-shrink-0 rounded-[8px] w-[345px] h-[201px] overflow-hidden">
+            <img src="hotelsImg/Card 2.svg" class="w-full h-full object-cover" alt="offer 2">
+        </div>
+        <!-- card3 -->
+        <div class="flex-shrink-0 rounded-[8px] w-[345px] h-[201px] overflow-hidden">
+            <img src="hotelsImg/Card 3.svg" class="w-full h-full object-cover" alt="offer 3">
+        </div>
+    </div>
+</section>
+
+<!-- footer section -->
+
+<footer class="py-14 px-6 md:px-18 bg-[#1E2358] text-white">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-10">
+        
+        <!-- logo Section -->
+        <div class="w-full md:w-1/3">
+            <div class="mb-4">
+                
+                <img src="footerImg/logo.png" class="w-[80px] h-auto object-contain" alt="Logo">
+            </div>
+            <p class="text-gray-400 text-sm md:text-base max-w-sm">
+                Your smart travel companion for flights, hotels, activities, and more — across the globe.
+            </p>
+            
+            <div class="pt-6 font-semibold text-sm uppercase tracking-wider text-gray-300">Languages</div>
+            <div class="flex flex-wrap gap-2 py-2">
+                <span class="text-white text-xs rounded-[5px] py-1 px-3 bg-[#253183] ">English</span>
+                <span class="text-white text-xs rounded-[5px] py-1 px-3 bg-[#253183] ">Arabic</span>
+                <span class="text-white text-xs rounded-[5px] py-1 px-3 bg-[#253183] ">Turkey</span>
+                <span class="text-white text-xs rounded-[5px] py-1 px-3 bg-[#253183]">Hindi</span>
+            </div>
+
+            <div class="pt-4 font-semibold text-sm uppercase tracking-wider text-gray-300">Currency</div>
+            <div class="flex flex-wrap gap-2 py-2">
+                <span class="text-white text-xs rounded-[5px] py-1 px-3 bg-[#253183] ">USD</span>
+                <span class="text-white text-xs rounded-[5px] py-1 px-3 bg-[#253183] ">RIAL</span>
+                <span class="text-white text-xs rounded-[5px] py-1 px-3 bg-[#253183] ">LIRA</span>
+                <span class="text-white text-xs rounded-[5px] py-1 px-3 bg-[#253183] ">RUPIA</span>
+            </div>
+        </div>
+        
+        <!-- links section -->
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-8 w-full md:w-2/3">
+            <div>
+                <h4 class="pb-4 text-lg font-bold">Explore</h4>
+                <div class="flex flex-col gap-2 text-sm text-gray-400">
+                    <a href="#" class="hover:text-white transition">Flights</a>
+                    <a href="#" class="hover:text-white transition">Hotels</a>
+                    <a href="#" class="hover:text-white transition">Activities & Tours</a>
+                    <a href="#" class="hover:text-white transition">Flight + Hotel</a>
+                    <a href="#" class="hover:text-white transition">Airport Transfers</a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="pb-4 text-lg font-bold">Company</h4>
+                <div class="flex flex-col gap-2 text-sm text-gray-400">
+                    <a href="#" class="hover:text-white transition">About Us</a>
+                    <a href="#" class="hover:text-white transition">Blog</a>
+                    <a href="#" class="hover:text-white transition">Gallery</a>
+                    <a href="#" class="hover:text-white transition">Contact Us</a>
+                    <a href="#" class="hover:text-white transition">Help Center</a>
+                </div>
+            </div>
+
+            <div class="col-span-2 md:col-span-1">
+                <h4 class="pb-4 text-lg font-bold">Legal</h4>
+                <div class="flex flex-col gap-2 text-sm text-gray-400">
+                    <a href="#" class="hover:text-white transition">Terms & Condition</a>
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="border-gray-700 my-8" />
+        
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+        <p class="text-sm text-gray-500">© 2024 YourBrand. All rights reserved.</p>
+        <div class="text-gray-300 text-sm font-medium flex flex-wrap justify-center gap-4">
+            <a href="#" class="hover:text-white">Twitter</a>
+            <span class="hidden md:inline text-gray-700">|</span>
+            <a href="#" class="hover:text-white">Facebook</a>
+            <span class="hidden md:inline text-gray-700">|</span>
+            <a href="#" class="hover:text-white">Instagram</a>
+            <span class="hidden md:inline text-gray-700">|</span>
+            <a href="#" class="hover:text-white">Linkedin</a>
+        </div>
+    </div>
+</footer>
+
+   <!--  -->
+  </body>
+</html>
